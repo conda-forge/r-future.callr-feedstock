@@ -1,11 +1,11 @@
-About r-future.callr
-====================
+About r-future.callr-feedstock
+==============================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/r-future.callr-feedstock/blob/main/LICENSE.txt)
 
 Home: https://future.callr.futureverse.org
 
 Package license: LGPL-2.1-or-later
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/r-future.callr-feedstock/blob/main/LICENSE.txt)
 
 Summary: Implementation of the Future API on top of the 'callr' package.  This allows you to process futures, as defined by the 'future' package, in parallel out of the box, on your local (Linux, macOS, Windows, ...) machine.  Contrary to backends relying on the 'parallel' package (e.g. 'future::multisession') and socket connections, the 'callr' backend provided here can run more than 125 parallel R processes.
 

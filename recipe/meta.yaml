@@ -1,4 +1,4 @@
-{% set version = '0.8.1' %}
+{% set version = "0.8.2" %}
 {% set posix = 'm2-' if win else '' %}
 {% set native = 'm2w64-' if win else '' %}
 
@@ -10,11 +10,11 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/future.callr_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/future.callr/future.callr_{{ version }}.tar.gz
-  sha256: 33bdfc4b7d41306f0f606c53cb7131255d54444ab02c6d8b50c5c89dadc0fcf0
+  sha256: 0b2be5dc0c35a530820b8503a541d2141172c6fe2778438b70ae98aad8281892
 
 build:
-  merge_build_host: True  # [win]
-  number: 1
+  merge_build_host: true  # [win]
+  number: 0
   noarch: generic
   rpaths:
     - lib/R/lib/
@@ -42,14 +42,11 @@ about:
   home: https://future.callr.futureverse.org
   dev_url: https://github.com/HenrikBengtsson/future.callr
   license: LGPL-2.1-or-later
-  summary: Implementation of the Future API on top of the 'callr' package.  This allows you to
-    process futures, as defined by the 'future' package, in parallel out of the box,
-    on your local (Linux, macOS, Windows, ...) machine.  Contrary to backends relying
-    on the 'parallel' package (e.g. 'future::multisession') and socket connections,
-    the 'callr' backend provided here can run more than 125 parallel R processes.
+  summary: Implementation of the Future API on top of the 'callr' package.  This allows you to process futures, as defined by the 'future' package, in parallel out of the box, on your local (Linux, macOS, Windows, ...) machine.  Contrary to backends relying on the 'parallel' package (e.g. 'future::multisession') and socket
+    connections, the 'callr' backend provided here can run more than 125 parallel R processes.
   license_family: LGPL
   license_file:
-    - '{{ environ["PREFIX"] }}/lib/R/share/licenses/LGPL-2.1'
+    - {{ environ["PREFIX"] }}/lib/R/share/licenses/LGPL-2.1
 
 extra:
   recipe-maintainers:

@@ -1,4 +1,4 @@
-{% set version = "1.0.0" %}
+{% set version = "1.0.1" %}
 {% set posix = 'm2-' if win else '' %}
 
 package:
@@ -9,7 +9,7 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/future.callr_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/future.callr/future.callr_{{ version }}.tar.gz
-  sha256: 7ae3e39a2d613b87efb9d4cf8d1781b27f0bf9058afce08ad75419767eb841f4
+  sha256: dd57db107e5dcbbe95b432ce79f29afb3bec7c075a13f80e37d9a661bdb57d86
 
 build:
   number: 0
